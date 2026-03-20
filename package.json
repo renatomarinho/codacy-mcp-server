@@ -1,0 +1,34 @@
+{
+  "name": "@codacy/codacy-mcp-vurb",
+  "version": "1.0.0",
+  "description": "Codacy MCP Server built with Vurb.ts MVA architecture — structured perception for AI agents.",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "codacy-mcp-vurb": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "vurb dev",
+    "start": "node dist/server.js",
+    "lock": "vurb lock",
+    "inspect": "vurb inspect",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@vurb/core": "^3.7.10",
+    "fast-redact": "^3.5.0",
+    "zod": "^3.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.0"
+  },
+  "license": "Apache-2.0"
+}
